@@ -42,6 +42,47 @@ button:hover {
     background-color: #2980b9; /* Darken on hover */
 }
 
+select#selectedColorId {
+    background-color: #3498db;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 6px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none; /* Removes blue outline on focus in some browsers */
+    transition: background-color 0.3s ease;
+}
+
+select#selectedColorId option[value="Red"] {
+    background-color: red;
+    color: #fff;
+  }
+  
+select#selectedColorId option[value="Blue"] {
+    background-color: blue;
+    color: #fff;
+  }
+  
+select#selectedColorId option[value="Green"] {
+    background-color: green;
+    color: #fff;
+  }
+  
+select#selectedColorId option[value="Yellow"] {
+    background-color: yellow;
+    color: #000;
+  }
+  
+select#selectedColorId option[value="SELECT"] {
+    background-color: #3498db;
+    color: #fff;
+  }
+
+select#selectedColorId:hover {
+    background-color: #2980b9; /* Darken on hover */
+}
 #grid {
     margin: 20px auto; 
     border-collapse: collapse;
