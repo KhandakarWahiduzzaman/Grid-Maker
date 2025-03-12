@@ -1,3 +1,9 @@
+
+/* Index & Grid Pages CSS Styling */
+
+
+
+/* Table Style */
 tr,td{
     border:1px;
     border-style: solid;
@@ -6,4 +12,37 @@ td{
     height: 50px;
     width: 50px;
     background-color: white;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #f0f8ff, #e6e6fa);
+    color: #333;
+    text-align: center;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+}
+
+section {
+    margin: 20px;
+}
+
+.grid-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.grid-link:hover {
+    background-color: #45a049;
 }
