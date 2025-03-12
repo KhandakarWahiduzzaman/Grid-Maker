@@ -5,9 +5,8 @@ This is the main repository for The Grid-Maker Website Project.
 
 Repository Link: [GitHub Repository](https://github.com/Galactic-Avenger/Grid-Maker)
 
-### Live Link: 
-[Website]()
-
+### Live Link
+[Website](https://galactic-avenger.github.io/Grid-Maker/)
 ## Team Members
 - **Abdulla Saleh** - GitHub: @Galactic-Avenger
 - **Khandakar Wahiduzzaman** - GitHub: @KhandakarWahiduzzaman
