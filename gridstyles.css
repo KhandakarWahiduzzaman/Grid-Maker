@@ -1,0 +1,49 @@
+/* Table Style */
+tr,td{
+    border:1px;
+    border-style: solid;
+}
+td{
+    height: 50px;
+    width: 50px;
+    background-color: white;
+}
+
+/*  Set up the body background image and base font */
+body {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* Base font style for the page */
+    /* Set a full-screen background image that stays fixed during scroll */
+    background: url('Grid.jpg') no-repeat center center fixed;
+    background-size: cover; /* Ensure the image covers the entire viewport */
+    color: #333; /* Default text color */
+}
+
+.container {
+    text-align: center;
+    padding-top: 60px;
+}
+
+button {
+    background-color: #3498db; /* A shade of blue */
+    border: none;
+    color: #fff; 
+    padding: 12px 20px; 
+    text-align: center;
+    font-size: 16px; 
+    margin: 6px;           /* Space between buttons */
+    cursor: pointer;       /* Hand cursor on hover */
+    border-radius: 4px;    /* Slightly rounded corners */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+button:hover {
+    background-color: #2980b9; /* Darken on hover */
+}
+
+#grid {
+    margin: 20px auto; 
+    border-collapse: collapse;
+}
+
