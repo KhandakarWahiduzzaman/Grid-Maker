@@ -3,6 +3,22 @@ let numRows = 0;
 let numCols = 0;
 let colorSelected; 
 
+// There was need to include two helper functions
+
+// This will color a cell when clicked
+function colorCell() {
+    if (colorSelected === "SELECT") {
+        alert("Please select a color from the dropdown.");
+    } else {
+        this.style.backgroundColor = colorSelected;
+    }
+}
+// This will set the global color when a color is chosen from the dropdown
+function selectColor() {
+    colorSelected = document.getElementById("selectedColorId").value;
+    console.log("Selected color:", colorSelected);
+}
+
 // Add a row
 function addR() {
     alert("Clicked Add Row"); // Replace this line with your code.
