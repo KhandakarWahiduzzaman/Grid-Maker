@@ -23,11 +23,7 @@ function removeC() {
     alert("Clicked Remove Col"); // Replace this line with your code.
 }
 
-// Set global variable for selected color
-function selectColor(){
-    colorSelected = document.getElementById("selectedColorId").value;
-    console.log(colorSelected);
-}
+
 
 // Fill all uncolored cells
 function fillU(){
