@@ -74,7 +74,24 @@ function removeR() {
 
 // Remove a column
 function removeC() {
-    alert("Clicked Remove Col"); // Replace this line with your code.
+    if(numCols === 0){
+        alert("No columns to remove");
+        return;
+    }
+
+    let table = document.getElementById("grid");
+    for(let i = 0; i < numRows; i++){
+        table.rows[i].deleteCell(numCols - 1);
+    }
+
+    numCols--;
+
+    if(numCols === 0){
+        while(table.rows.length > 0){
+            table.deleteRow(0);
+        }
+        numRows = 0;
+    }
 }
 
 
@@ -91,5 +108,11 @@ function fillAll(){
 
 // Clear all cells
 function clearAll(){
-    alert("Clicked Clear All"); // Replace this line with your code.
+    const table = document.getElementById("grid");
+    
+    for(let i = 0; i < table.rows.length; i++){
+        for(let j = 0; j < table.rows[i].cells.length; j++){
+            table.rows[i].cells[j].style.backgroundColor = "white";
+        }
+    }
 }
