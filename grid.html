@@ -5,8 +5,12 @@
     <link rel="stylesheet" href="gridstyles.css">
 </head>
 <body>
+     <!-- This is a button to go back to the homepage -->
+     <button onclick="window.location.href='index.html'">
+        Back to Homepage
+    </button>
     <div class="container">
-    <!-- Menu Buttons -->
+    <!-- Action Buttons -->
     <button onclick="addR()">Add Row</button>
     <button onclick="addC()">Add Col</button>
     <button onclick="removeR()">Remove Row</button>
@@ -21,12 +25,13 @@
         <option value="Green">Green</option>
         <option value="Yellow">Yellow</option>
     </select>
-    <!-- Grid Table -->
+    <!-- The Grid Table -->
     <table id="grid">
         
     </table>
     </div>
-    <!-- Script -->
+    <!-- JavaScript code -->
     <script src="script.js"></script>
+   
 </body>
 </html>

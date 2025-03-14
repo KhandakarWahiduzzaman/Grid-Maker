@@ -8,33 +8,45 @@ let colorSelected;
 // This will color a cell when clicked
 function colorCell() {
     if (colorSelected === "SELECT") {
-        alert("Please select a color from the dropdown.");
+        alert("Please select a color from the dropdown."); /* It is called when a cell is clicked. If no valid color is selected, an alert prompts the user to pick one. 
+        Otherwise, the cell’s background is updated to the selected color. */
     } else {
         this.style.backgroundColor = colorSelected;
     }
 }
 
+
 // This will set the global color when a color is chosen from the dropdown
 function selectColor() {
+    /** This triggered whenever a user chooses a color from the dropdown.
+ The function reads the selected color and stores it in the global variable 'colorSelected'. The chosen color is then
+  used by other functions like colorCell) to update cell colors.*/
     colorSelected = document.getElementById("selectedColorId").value;
     console.log("Selected color:", colorSelected);
 }
 
 // Add a new row to the grid
 function addR() {
+    // Get a reference to the table element
     let table = document.getElementById("grid");
+    // Insert a new row at the end
     let newRow = table.insertRow();
 
-    // If no columns exist yet, create one by default
+    // If there are no columns, create one by default
     if (numCols === 0) {
         numCols = 1;
     }
-    
+
+    // For each column, create a new cell
     for (let i = 0; i < numCols; i++) {
         let newCell = newRow.insertCell();
+        // Attach the click event to color the cell
         newCell.onclick = colorCell;
+        // Default the cell's background to white
         newCell.style.backgroundColor = "white";
     }
+
+    // Increase the total row count
     numRows++;
 }
 
@@ -42,16 +54,18 @@ function addR() {
 function addC() {
     let table = document.getElementById("grid");
     let rows = table.rows;
-    
-    // This says that if the grid is empty, add a new row first.
+
+    // If there are no rows, add a new row first
     if (rows.length === 0) {
         addR();
     } else {
+        // Insert a new cell in each existing row
         for (let i = 0; i < rows.length; i++) {
             let newCell = rows[i].insertCell();
             newCell.onclick = colorCell;
             newCell.style.backgroundColor = "white";
         }
+        // Increase the total column count
         numCols++;
     }
 }
