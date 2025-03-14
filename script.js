@@ -13,6 +13,7 @@ function colorCell() {
         this.style.backgroundColor = colorSelected;
     }
 }
+
 // This will set the global color when a color is chosen from the dropdown
 function selectColor() {
     colorSelected = document.getElementById("selectedColorId").value;
@@ -55,7 +56,6 @@ function addC() {
     }
 }
 
-
 // Remove a row
 function removeR() {
     if(numRows === 0){
@@ -94,16 +94,26 @@ function removeC() {
     }
 }
 
-
-
 // Fill all uncolored cells
-function fillU(){
-    alert("Clicked Fill All Uncolored"); // Replace this line with your code.
+function fillU() {
+    let table = document.getElementById("grid");
+    for (let i = 0; i < table.rows.length; i++) {
+        for (let j = 0; j < table.rows[i].cells.length; j++) {
+            if (table.rows[i].cells[j].style.backgroundColor === " " || table.rows[i].cells[j].style.backgroundColor === "white") {
+                table.rows[i].cells[j].style.backgroundColor = colorSelected;
+            }
+        }
+    }
 }
 
 // Fill all cells
-function fillAll(){
-    alert("Clicked Fill All"); // Replace this line with your code.
+function fillAll() {
+    let table = document.getElementById("grid");
+    for (let i = 0; i < table.rows.length; i++) {
+        for (let j = 0; j < table.rows[i].cells.length; j++) {
+            table.rows[i].cells[j].style.backgroundColor = colorSelected;
+        }
+    }
 }
 
 // Clear all cells
