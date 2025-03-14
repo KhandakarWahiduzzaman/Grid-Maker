@@ -21,20 +21,20 @@ body {
 }
 
 .container {
-    text-align: center;
-    padding-top: 60px;
+    text-align: center;/*Center align the buttons*/
+    padding-top: 60px;/* Space from top */
 }
 
 button {
     background-color: #3498db; /* A shade of blue */
-    border: none;
-    color: #fff; 
-    padding: 12px 20px; 
-    text-align: center;
-    font-size: 16px; 
-    margin: 6px;           /* Space between buttons */
-    cursor: pointer;       /* Hand cursor on hover */
-    border-radius: 4px;    /* Slightly rounded corners */
+    border: none;/* Remove borders */
+    color: #fff; /* White text */
+    padding: 12px 20px; /* Padding around buttons */
+    text-align: center;/* Text align in center */
+    font-size: 16px; /* Set font size */
+    margin: 6px; /* Space between buttons */
+    cursor: pointer; /* Hand cursor on hover */
+    border-radius: 4px; /* Slightly rounded corners */
     transition: background-color 0.3s ease; /* Smooth hover effect */
 }
 
@@ -45,36 +45,41 @@ button:hover {
 select#selectedColorId {
     background-color: #3498db;
     color: #fff;
-    font-size: 16px;
+    font-size: 16px; /* Set font size */
     padding: 10px 20px;
-    margin: 6px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+    margin: 6px; /* Space between buttons */
+    border: none;/* Remove borders */
+    border-radius: 4px; /* Slightly rounded corners */
+    cursor: pointer; /* Hand cursor on hover */
     outline: none; /* Removes blue outline on focus in some browsers */
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
 }
 
+/* Dropdown button color for Red */
 select#selectedColorId option[value="Red"] {
     background-color: red;
     color: #fff;
   }
-  
+
+/* Dropdown button color for Blue */
 select#selectedColorId option[value="Blue"] {
     background-color: blue;
     color: #fff;
   }
-  
+
+/* Dropdown button color for Green */
 select#selectedColorId option[value="Green"] {
     background-color: green;
     color: #fff;
   }
-  
+
+/* Dropdown button color for Yellow */
 select#selectedColorId option[value="Yellow"] {
     background-color: yellow;
     color: #000;
   }
-  
+
+/* Dropdown button color for SELECT */
 select#selectedColorId option[value="SELECT"] {
     background-color: #3498db;
     color: #fff;
@@ -83,8 +88,10 @@ select#selectedColorId option[value="SELECT"] {
 select#selectedColorId:hover {
     background-color: #2980b9; /* Darken on hover */
 }
+
+
 #grid {
-    margin: 20px auto; 
-    border-collapse: collapse;
+    margin: 20px auto; /* Centers the grid horizontally */
+    border-collapse: collapse;/* Collapses the borders between cells to avoid double borders */
 }
 
