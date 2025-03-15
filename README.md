@@ -13,4 +13,39 @@ Repository Link: [GitHub Repository](https://github.com/Galactic-Avenger/Grid-Ma
 - **Khandakar Wahiduzzaman** - GitHub: @KhandakarWahiduzzaman
 - **Leo Chen** - GitHub: @lc6003
 
+## Features
+
+   **Add Row**  
+   -  Insert a new row at the bottom of the grid. Each new cell starts out white and clickable ready for coloring.
+
+   **Add Column**  
+   - Expand the grid sideways by adding a new column to every existing row. 
+
+   **Remove Row**  
+   - Need fewer rows? Click “Remove Row” to delete the bottom row. 
+
+   **Remove Column**  
+   - Trim the grid horizontally by removing the rightmost column from each row. If no columns remain, the entire grid resets to empty.
+
+  **Select Color**  
+   - Pick from Red, Blue, Green, or Yellow in the dropdown. Once selected, this color is ready for use across all your grid cells.
+
+   **Color Single Cell**  
+   - Simply click on a cell to color it with your chosen hue. If you haven’t selected a color yet, you’ll get a reminder to do so first.
+
+   **Fill All Uncolored**  
+   - Instantly color every white (uncolored) cell without overwriting any that already have color.
+
+   **Fill All**  
+   - Transform the entire grid into one color with a single click, whether cells were previously colored or not.
+
+   **Clear All**  
+   - Reset every cell back to white. This doesn’t affect the number of rows or columns.
+
+   **Homepage Link**  
+    - Start on a welcoming homepage that introduces the project and team members, then jump to the Grid Maker page.
+
+   **Back to Homepage**  
+    - On the grid page a button takes you straight back to the homepage if you need to review the team list or start over.
+
 
