@@ -110,9 +110,13 @@ function removeC() {
 
 // Fill all uncolored cells
 function fillU() {
+    // Get the grid table element
     let table = document.getElementById("grid");
+    // Loop through each row of the table
     for (let i = 0; i < table.rows.length; i++) {
+        // Loop through each cell of the row
         for (let j = 0; j < table.rows[i].cells.length; j++) {
+            // If the cell is uncolored or white, fill it with the selected color
             if (table.rows[i].cells[j].style.backgroundColor === " " || table.rows[i].cells[j].style.backgroundColor === "white") {
                 table.rows[i].cells[j].style.backgroundColor = colorSelected;
             }
@@ -122,8 +126,11 @@ function fillU() {
 
 // Fill all cells
 function fillAll() {
+    // Get the grid table element
     let table = document.getElementById("grid");
+    // Loop through each row of the table
     for (let i = 0; i < table.rows.length; i++) {
+        // Loop through each cell of the row, then fill it with the selected color
         for (let j = 0; j < table.rows[i].cells.length; j++) {
             table.rows[i].cells[j].style.backgroundColor = colorSelected;
         }
